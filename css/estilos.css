@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background: #FFEB37;
+  font-family: B612 Mono, monospace;
+  font-size: 16px; }
+  body header .contenedor {
+    width: 100%;
+    overflow: hidden; }
+
+.contenedor {
+  background: #000;
+  height: 50px; }
+  .contenedor .menu-principal {
+    margin: 12.5px;
+    text-align: center; }
+    .contenedor .menu-principal .menu a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.5em;
+      margin: 0 60px; }
+    .contenedor .menu-principal .menu a:hover {
+      background: #FFEB37;
+      color: #000; }
+
+/*# sourceMappingURL=estilos.css.map */
