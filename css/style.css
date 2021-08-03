@@ -77,12 +77,13 @@ header .text-container .profession h2 {
 .about {
   background: #fff;
   padding: 20px;
-  margin: 0px 20px 40px 20px;
+  margin: 10px 20px 40px 20px;
 }
 .about-title {
   font-weight: bold;
   text-decoration: underline;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  font-size: 2em;
 }
 .text-span {
   text-decoration: underline;
@@ -95,5 +96,61 @@ header .text-container .profession h2 {
 .main-title {
   font-weight: bold;
   text-decoration: underline;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.main-works {
+  padding: 60px 0;
+}
+.main .container .main-works {
+  overflow: hidden;
+}
+.main .container .main-works {
+  font-size: 2em;
+  line-height: 30px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+.main .container .works-panel {
+  margin-left: 40px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify: space-between;
+  justify-content: center;
+}
+.main .container .works-panel .each-work {
+  text-align: center;
+  width: 25%;
+  margin-bottom: 10px;
+}
+.main .container .works-panel .each-work .svg-container {
+  width: 100%;
+  margin-bottom: 10px;
+  margin: auto;
+}
+.main .container .works-panel .each-work svg {
+  
+}
+.main .container .works-panel .each-work .description {
+margin-top: 0px;
+line-height: 7px;
+margin-right: center;
+}
+
+.main .container .works-panel .each-work .description .name {
+  font-weight: normal;
+  color: #000;
+  font-size: .5em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.main .container .works-panel .each-work .description .category {
+  font-size: .35em;
+  font-weight: normal;
+  text-align: center;
 }
