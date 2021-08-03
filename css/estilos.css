@@ -1,8 +1,6 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 body {
@@ -19,7 +17,7 @@ body header .contenedor {
 
 .contenedor {
   background: #000;
-  height: 50px;
+  height: 690px;
 }
 
 .contenedor .menu-principal {
@@ -39,5 +37,20 @@ body header .contenedor {
 .contenedor .menu-principal .menu a:hover {
   background: #FFEB37;
   color: #000;
+}
+
+.contenedor-presentacion {
+  background: #ffeb37;
+  color: #000;
+  margin: 200px;
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 3em;
 }
 /*# sourceMappingURL=estilos.css.map */
