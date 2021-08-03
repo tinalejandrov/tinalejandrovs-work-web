@@ -1,9 +1,13 @@
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
 body {
   background: #FFEB37;
+  background-attachment: scroll;
   font-family: B612 Mono, monospace;
   font-size: 16px; }
   body header .contenedor {
@@ -17,10 +21,12 @@ body {
     margin: 12.5px;
     text-align: center; }
     .contenedor .menu-principal .menu a {
+      padding: 15px;
       color: #fff;
       text-decoration: none;
       font-size: 1.5em;
-      margin: 0 60px; }
+      margin: 0 60px;
+      letter-spacing: 5px; }
     .contenedor .menu-principal .menu a:hover {
       background: #FFEB37;
       color: #000; }
