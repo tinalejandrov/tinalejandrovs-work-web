@@ -53,4 +53,18 @@ body header .contenedor {
   text-align: center;
   font-size: 3em;
 }
+
+.principal {
+  font-size: 1em;
+  overflow: hidden;
+  width: 100%;
+}
+
+.principal .acerca-de {
+  background: #fff;
+  text-align: center;
+  padding: 50px;
+  line-height: 45px;
+  letter-spacing: 7px;
+}
 /*# sourceMappingURL=estilos.css.map */
