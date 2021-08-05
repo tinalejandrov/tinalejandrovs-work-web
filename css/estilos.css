@@ -95,10 +95,6 @@ body header .contenedor {
   vertical-align: center;
 }
 
-.contenedor-trabajos img:hover {
-  background-image: url(../img/gafas-ordenador.jpg);
-}
-
 .contenedor-trabajos .trabajos-contenedor {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,6 +108,13 @@ body header .contenedor {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.contenedor-trabajos .trabajos-contenedor .trabajo:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
 }
 
 .contenedor-trabajos .trabajos-contenedor .textos-trabajo {
