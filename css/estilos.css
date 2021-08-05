@@ -95,6 +95,10 @@ body header .contenedor {
   vertical-align: center;
 }
 
+.contenedor-trabajos img:hover {
+  background-image: url(../img/gafas-ordenador.jpg);
+}
+
 .contenedor-trabajos .trabajos-contenedor {
   display: -webkit-box;
   display: -ms-flexbox;
