@@ -13,13 +13,16 @@
         width: 150px
         margin: 50px 50px -10px 50px
         vertical-align: center
-    img:hover
-        background-image: url(../img/gafas-ordenador.jpg)
+    
     .trabajos-contenedor
         display: flex
         flex-direction: row
         flex-wrap: wrap
         justify-content: center
+        .trabajo:hover
+            -webkit-transform: scale(1.5)
+            transform: scale(1.5)
+            transition: 0.75s
         .textos-trabajo
             text-align: center
             .especialidad
