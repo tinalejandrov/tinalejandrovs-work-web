@@ -63,8 +63,65 @@ body header .contenedor {
 .principal .acerca-de {
   background: #fff;
   text-align: center;
-  padding: 50px;
+  padding: 1px 0;
+  padding-bottom: 20px;
   line-height: 45px;
   letter-spacing: 7px;
+}
+
+.acerca-de-titulo {
+  text-align: center;
+  font-size: 3em;
+  margin: 75px;
+}
+
+.contenedor-trabajos {
+  height: 600px;
+  margin: 0px 0px 50px 0px;
+  padding-top: 1px;
+  overflow: hidden;
+}
+
+.contenedor-trabajos .trabajo-titulo {
+  font-size: 2.5em;
+  text-align: center;
+  margin: 15px 0px 5px 0px;
+  padding: 10px;
+}
+
+.contenedor-trabajos img {
+  width: 150px;
+  margin: 50px 50px -10px 50px;
+  vertical-align: center;
+}
+
+.contenedor-trabajos .trabajos-contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenedor-trabajos .trabajos-contenedor .textos-trabajo {
+  text-align: center;
+}
+
+.contenedor-trabajos .trabajos-contenedor .textos-trabajo .especialidad {
+  font-weight: normal;
+  color: #000;
+  font-size: 1em;
+}
+
+.contenedor-trabajos .trabajos-contenedor .textos-trabajo .especialidad-descripcion {
+  font-weight: normal;
+  font-size: 0.75em;
 }
 /*# sourceMappingURL=estilos.css.map */
