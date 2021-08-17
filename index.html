@@ -13,14 +13,13 @@
 </head>
 <body>
   <header>
-     <div class="contenedor">
+     <div class="contenedor" id="inicio">
        <div class="menu-principal">
          <nav class="menu">
-           <a href="" class="nav-inicio">Inicio</a>
-           <a href="" class="nav-contacto">Acerca de</a>
-           <a href="" class="nav-trabajos">Trabajos</a>
-           <a href="" class="nav-contacto">Contacto</a>
-           
+           <a href="#inicio" class="nav-inicio">Inicio</a>
+           <a href="#acerca" class="nav-contacto">Acerca de</a>
+           <a href="#trabajos" class="nav-trabajos">Trabajos</a>
+           <a href="#contacto" class="nav-contacto">Contacto</a> 
          </nav>
        </div>
        <div class="contenedor-presentacion">
@@ -32,7 +31,7 @@
     </div>
   </header>
     <section class="principal">
-      <section class="acerca-de">
+      <section class="acerca-de" id="acerca">
         <div class="acerca-de-contenedor">
         <h2 class="acerca-de-titulo">Acerca de</h2>
         <p class="texto acerca-de"><span class="tins-span">tinalejandrov</span> es el CEO y creador de la compania <br>
@@ -43,7 +42,7 @@
         </p>
       </div>
       </section>
-      <section class="contenedor-trabajos">
+      <section class="contenedor-trabajos" id="trabajos">
         <h2 class="trabajo-titulo">Trabajos</h2>
         <div class="trabajos">
           <div class="trabajos-contenedor">
@@ -87,14 +86,14 @@
         </div>
       </section>
     </section> 
-    <div class="contenedor-formulario">
+    <div class="contenedor-formulario" id="contacto">
     <h4 class="contacto-titulo" >Contacto</h4>
-    <form action="" class="formulario">
+    <form action="" class="formulario" method="post" action="enviar.php">
       <div class="inputs">
-      <input type="text" placeholder="Nombre">
-      <input type="email" placeholder="Correo">
-      <textarea placeholder="Mensaje"></textarea>
-      <input type="submit" value="enviar" cols="30" rows="10">
+      <input type="text" required="required" placeholder="Nombre" name="nombre">
+      <input type="email" required="required" placeholder="Correo" name="email">
+      <textarea placeholder="Mensaje" required="required"></textarea>
+      <input type="submit" value="enviar" cols="30" rows="10" required="required" name="mensaje">
     </div>
     </form>
     </div>

@@ -1,33 +1,53 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  pointer: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background: #FFEB37;
   background-attachment: scroll;
   font-family: B612 Mono, monospace;
-  font-size: 16px; }
-  body header .contenedor {
-    width: 100%;
-    overflow: hidden; }
+  font-size: 16px;
+}
+
+body header .contenedor {
+  width: 100%;
+  overflow: hidden;
+}
 
 .contenedor {
   background: #000;
-  height: 690px; }
-  .contenedor .menu-principal {
-    margin: 12.5px;
-    text-align: center; }
-    .contenedor .menu-principal .menu a {
-      padding: 7px;
-      color: #fff;
-      text-decoration: none;
-      font-size: 1.5em;
-      margin: 0 60px;
-      letter-spacing: 5px; }
-    .contenedor .menu-principal .menu a:hover {
-      background: #FFEB37;
-      color: #000; }
+  height: 690px;
+}
+
+.contenedor .menu-principal {
+  margin: 12.5px;
+  text-align: center;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+}
+
+.contenedor .menu-principal .menu a {
+  padding: 7px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin: 0 60px;
+  letter-spacing: 5px;
+}
+
+.contenedor .menu-principal .menu a:hover {
+  background: #FFEB37;
+  color: #000;
+}
 
 .contenedor-presentacion {
   background: #ffeb37;
@@ -35,60 +55,96 @@ body {
   padding: 25px;
   margin: 200px;
   display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
-  font-size: 3em; }
+  font-size: 3em;
+}
 
 .principal {
   font-size: 1em;
   overflow: hidden;
-  width: 100%; }
-  .principal .acerca-de {
-    background: #fff;
-    text-align: center;
-    padding: 1px 0;
-    padding-bottom: 20px;
-    line-height: 45px;
-    letter-spacing: 7px; }
+  width: 100%;
+  border-top: 10px solid #ffeb37;
+}
+
+.principal .acerca-de {
+  background: #fff;
+  text-align: center;
+  padding: 1px 0;
+  padding-bottom: 20px;
+  line-height: 45px;
+  letter-spacing: 7px;
+}
 
 .acerca-de-titulo {
   text-align: center;
   font-size: 3em;
-  margin: 75px; }
+  margin: 75px;
+}
 
 .contenedor-trabajos {
   height: 350px;
   margin: 0px 0px 50px 0px;
   padding-top: 1px;
-  overflow: hidden; }
-  .contenedor-trabajos .trabajo-titulo {
-    font-size: 2.5em;
-    text-align: center;
-    margin: 15px 0px 5px 0px;
-    padding: 10px; }
-  .contenedor-trabajos img {
-    width: 150px;
-    margin: 50px 50px -10px 50px;
-    vertical-align: center; }
-  .contenedor-trabajos .trabajos-contenedor {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center; }
-    .contenedor-trabajos .trabajos-contenedor .trabajo:hover {
-      -webkit-transform: scale(1.5);
-      transform: scale(1.5);
-      transition: 0.75s; }
-    .contenedor-trabajos .trabajos-contenedor .textos-trabajo {
-      text-align: center; }
-      .contenedor-trabajos .trabajos-contenedor .textos-trabajo .especialidad {
-        font-weight: normal;
-        color: #000;
-        font-size: 1em; }
-      .contenedor-trabajos .trabajos-contenedor .textos-trabajo .especialidad-descripcion {
-        font-weight: normal;
-        font-size: 0.75em; }
+  border-top: 10px solid #000;
+}
+
+.contenedor-trabajos .trabajo-titulo {
+  font-size: 2.5em;
+  text-align: center;
+  margin: 15px 0px -30px 0px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.contenedor-trabajos img {
+  width: 150px;
+  margin: 50px 50px -10px 50px;
+  vertical-align: center;
+}
+
+.contenedor-trabajos .trabajos-contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  pointer: pointer;
+}
+
+.contenedor-trabajos .trabajos-contenedor .trabajo:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+
+.contenedor-trabajos .trabajos-contenedor .textos-trabajo {
+  text-align: center;
+}
+
+.contenedor-trabajos .trabajos-contenedor .textos-trabajo .especialidad {
+  font-weight: normal;
+  color: #000;
+  font-size: 1em;
+}
+
+.contenedor-trabajos .trabajos-contenedor .textos-trabajo .especialidad-descripcion {
+  font-weight: normal;
+  font-size: 0.75em;
+}
 
 .contenedor-formulario {
   background: #fff;
@@ -96,17 +152,30 @@ body {
   height: 429px;
   margin: 0 0 0 0.25px;
   padding: 10px 20px;
-  border: solid 10px #000; }
-  .contenedor-formulario .contacto-titulo {
-    font-size: 3em;
-    text-align: center;
-    margin-bottom: 5px; }
-  .contenedor-formulario .formulario {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    margin: auto; }
+  border: solid 10px #000;
+}
+
+.contenedor-formulario .contacto-titulo {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.contenedor-formulario .formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
 
 .formulario input[type="text"],
 .formulario input[type="email"],
@@ -115,21 +184,24 @@ body {
   width: 100%;
   padding: 20px;
   margin: 1px;
-  border: 2px solid #000; }
+  border: 2px solid #000;
+}
 
 .formulario textarea {
   min-height: 120px;
   max-height: 300px;
   min-width: 100%;
   max-width: 100%;
-  resize: none; }
+  resize: none;
+}
 
 .formulario input[type="text"]:focus,
 .formulario input[type="email"]:focus,
 .formulario input[type="submit"],
 .formulario textarea:focus {
   border: 3px solid #ffeb37;
-  outline: none; }
+  outline: none;
+}
 
 .formulario input[type="submit"] {
   width: 200px;
@@ -141,54 +213,73 @@ body {
   font-size: 2em;
   font-weight: bold;
   margin-left: 41%;
-  margin-top: 17px; }
+  margin-top: 17px;
+}
 
 .formulario input[type="submit"]:hover {
   background: #000;
   color: #fff;
-  border: solid 3px #ffeb37; }
+  border: solid 3px #ffeb37;
+}
 
 .contenedor-footer {
   background: #000;
   width: 100%;
-  color: #fff; }
-  .contenedor-footer .contenedor-redes-sociales {
-    display: flex;
-    justify-content: center;
-    vertical-align: center; }
-  .contenedor-footer .contenedor-redes-sociales a {
-    font-size: 2em;
-    width: 33.33%;
-    display: flex;
-    margin: 5px;
-    height: 40px;
-    background: #fff;
-    margin-bottom: 12px;
-    justify-content: center;
-    font-align: center;
-    text-decoration: none;
-    padding-top: 4px;
-    color: #fff;
-    background: #000; }
+  color: #fff;
+}
+
+.contenedor-footer .contenedor-redes-sociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  vertical-align: center;
+}
+
+.contenedor-footer .contenedor-redes-sociales a {
+  font-size: 2em;
+  width: 33.33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px;
+  height: 40px;
+  background: #fff;
+  margin-bottom: 12px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-align: center;
+  text-decoration: none;
+  padding-top: 4px;
+  color: #fff;
+  background: #000;
+}
 
 .contenedor-footer .contenedor-redes-sociales .icono-ins:hover {
   background: #e1306c;
-  color: #fff; }
+  color: #fff;
+}
 
 .contenedor-footer .contenedor-redes-sociales .icono-twi:hover {
   background: #1da1f2;
-  color: #fff; }
+  color: #fff;
+}
 
 .contenedor-footer .contenedor-redes-sociales .icono-face:hover {
   background: #1877f2;
-  color: #fff; }
+  color: #fff;
+}
 
 .contenedor-texto-footer span:hover {
   background: #ffeb37;
-  color: #000; }
+  color: #000;
+}
 
 .contenedor-texto-footer p {
   text-align: center;
-  font-size: 1.5em; }
-
+  font-size: 1.5em;
+}
 /*# sourceMappingURL=estilos.css.map */
