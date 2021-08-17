@@ -106,6 +106,7 @@ body header .contenedor {
   width: 150px;
   margin: 50px 50px -10px 50px;
   vertical-align: center;
+  cursor: pointer;
 }
 
 .contenedor-trabajos .trabajos-contenedor {
@@ -121,7 +122,6 @@ body header .contenedor {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  pointer: pointer;
 }
 
 .contenedor-trabajos .trabajos-contenedor .trabajo:hover {
